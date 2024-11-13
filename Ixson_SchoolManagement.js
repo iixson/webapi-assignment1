@@ -1,4 +1,5 @@
 module.exports = {
+  //Sample Data
   students: [
     {
       id: 1,
@@ -38,4 +39,33 @@ module.exports = {
     { id: 1, name: "Present" },
     { id: 2, name: "Absent" },
   ],
+
+  //Functions
+
+  //Get Student
+  getStudentById(studentid) {},
+
+  //Get Class
+  getClassById(classid) {},
+
+  //Get Status
+  getStatusNameById(statusid) {},
+
+  //Add Attendance
+  addAttendanceRecord(studentId, classId, date, status) {},
+
+  //Add Class Attendance
+  addClassAttendance(classId, date, absentStudentIds = []) {},
+
+  //Get Student's Attendance By Date
+  getAttendanceRecord(studentid, date) {},
+
+  //Get Student's Attendance Summary
+  getAttendanceSummary(studentid) {},
+
+  //Update Attendance
+  updateAttendanceRecord(studentid, date, updatedstatus) {},
+
+  //Delete Attendance
+  deleteAttendanceRecord(studentid, date) {},
 };
